@@ -186,7 +186,8 @@ const SkeletonContent: React.FunctionComponent<ISkeletonContentProps> = ({
       {
         backgroundColor: interpolateColor(animationValue, {
           inputRange: [0, 1],
-          outputRange: [boneColor!, highlightColor!]
+          outputRange: [boneColor!, highlightColor!],
+          useNativeDriver: true
         })
       }
     ];
